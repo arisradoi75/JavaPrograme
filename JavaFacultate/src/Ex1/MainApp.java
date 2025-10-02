@@ -12,14 +12,19 @@ public class MainApp {
             int min = Integer.MIN_VALUE;
             int count = 0;
 
-            int nr = scanner.nextInt();
-            suma = +nr;
-            count++;
+            int n = 6;
+            for(int i = 1; i <= n; i++) {
+                int nr = scanner.nextInt();
+                suma += nr;
+                count++;
+
+                if(nr < min)
+                    min = nr;
+                if(nr > max)
+                    max = nr;
+            }
+
             media = suma / count;
-            if(nr < min)
-                min = nr;
-            if(nr > max)
-                max = nr;
 
             System.out.println("Suma: " + suma);
             System.out.println("Media: " + media);
