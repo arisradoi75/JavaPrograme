@@ -1,0 +1,4 @@
+suma: 8
+media: 8
+minim: -2147483648
+maxim: 2147483647
