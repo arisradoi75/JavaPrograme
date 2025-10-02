@@ -1,4 +1,4 @@
 suma: 27
 media: 4
-minim: -2147483648
-maxim: 2147483647
+minim: 2
+maxim: 8
