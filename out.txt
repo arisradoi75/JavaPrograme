@@ -1,0 +1,4 @@
+suma: 27
+media: 4
+minim: 2
+maxim: 8
