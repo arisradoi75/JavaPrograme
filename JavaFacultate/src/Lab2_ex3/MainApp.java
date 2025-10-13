@@ -12,7 +12,7 @@ public class MainApp {
         System.out.println("Introduceti sirul initial: ");
         String sir = scanner.nextLine();
 
-        StringBuilder text = new StringBuilder(sir);
+        StringBuilder text = new StringBuilder(sir); // parametrul text creat din clasa stringbuilder
 
         System.out.println("Introduceti sirul care trebuie inserat: ");
         String deInserat = scanner.nextLine();
@@ -20,9 +20,9 @@ public class MainApp {
         System.out.println("Introduceti de la ce pozitie sa inceapa: ");
         int pozitie = scanner.nextInt();
 
-        if(pozitie >=0 && pozitie <= text.length()){
-            text.insert(pozitie, deInserat);
-            System.out.println(text.toString());
+        if(pozitie >=0 && pozitie <= text.length()){ // punem conditia sa fie intre 0 si lungimea sirului
+            text.insert(pozitie, deInserat); // inseram sirul
+            System.out.println(text.toString()); // afisam textul pe care il convertim din stringbuilder -> string
         }
 
         System.out.println("Introduceti de unde sa inceapa stergerea: ");
@@ -31,7 +31,7 @@ public class MainApp {
         System.out.println("Introduceti nr de caractere: ");
         int nrCaractere = scanner.nextInt();
 
-        int pozitieFinala = pozitieStergere +  nrCaractere;
+        int pozitieFinala = pozitieStergere +  nrCaractere; // exact acelasi concept ca si la inserare
         if(pozitieFinala >=0 && pozitieFinala <= text.length()){
             text.delete(pozitieStergere , pozitieFinala);
             System.out.println("Dupa stergere: " + text.toString());

@@ -24,10 +24,10 @@ public class Persoana {
         this.CNP = CNP;
     }
     public int getVarsta(){
-        int s = Character.getNumericValue(CNP.charAt(0));
-        int an = Integer.parseInt(CNP.substring(1, 3));
-        int luna = Integer.parseInt(CNP.substring(3, 5));
-        int zi = Integer.parseInt(CNP.substring(5, 7));
+        int s = Character.getNumericValue(CNP.charAt(0)); // ia elementul de la pozitia 0 , il conv in numeric si il stocheaza in variabila s
+        int an = Integer.parseInt(CNP.substring(1, 3)); // extrage cifrele din cele 2 pozitii si le conv intr-un int
+        int luna = Integer.parseInt(CNP.substring(3, 5)); // la fel ca mai sus
+        int zi = Integer.parseInt(CNP.substring(5, 7)); // la fel ca si mai sus
 
         int secol = 0;
         if(s == 1 || s == 2 ) secol = 1900;
@@ -50,7 +50,7 @@ public class Persoana {
         if (prima != '5') {return false;}
         if (prima != '6') {return false;}
 
-        for(int i=0;i<CNP.length();i++) {
+        for(int i=0;i<CNP.length();i++) { // un loop care este intre 0 si lungimea cnp ului
             char c = CNP.charAt(i);
             if(c < '0' || c > '9') {return false;}
         }
@@ -61,7 +61,7 @@ public class Persoana {
     }
 
     public void afiseazaDetalii(){
-        System.out.println("Numele persoanei: " + nume + " \nVarsta persoanei: " + getVarsta());
+        System.out.println("Numele persoanei: " + nume + "Cnp ul persoanei: " + CNP +  " \nVarsta persoanei: " + getVarsta());
     }
 
 }

@@ -26,7 +26,7 @@ public class MainApp {
         Random random = new Random();
 
 
-        List<Vers> versuri = new ArrayList<>();
+        List<Vers> versuri = new ArrayList<>(); // lista de versuri
 
         System.out.println("Introduceti o grupare de cuvinte: ");
         String grupare = scanner.nextLine().trim();
@@ -43,22 +43,22 @@ public class MainApp {
         }
 
         try (PrintWriter fileWriter = new PrintWriter("cantec_out.txt")) {
-            for (Vers v : versuri) {
-                double x = random.nextDouble();
-                String textFinal = v.getText();
+            for (Vers v : versuri) { // folosim un for pentru parcurgerea listei de versuri
+                double x = random.nextDouble(); // generam un numar random x
+                String textFinal = v.getText(); // cream o variabila caruia ii atribuim textul
 
-                if (x < 0.1) {
-                    textFinal = v.majuscule();
+                if (x < 0.1) { // punem coniditia ca x <0.1
+                    textFinal = v.majuscule(); // scriem versul cu majuscule
                 }
-                int nrCuvinte = v.numarCuvinte();
-                int nrVoclae = v.numarVocale();
-                String linie = String.format("%s (Cuvinte: %d , Vocale: %d)", textFinal, nrCuvinte, nrVoclae);
+                int nrCuvinte = v.numarCuvinte(); // metoda de citire a nr de cuvinte apelata din clasa Vers
+                int nrVoclae = v.numarVocale(); // aceasi chestie doar ca cu vocale
+                String linie = String.format("%s (Cuvinte: %d , Vocale: %d)", textFinal, nrCuvinte, nrVoclae); // afisarea nr ului de cuvinte si nr ului de vocale
 
                 if(v.seTerminaCu(grupare)){
-                    linie += " *";
+                    linie += " *"; // adaugam stea unde se termina cu gruparea citita mai sus
                 }
                 System.out.println("Fisierul a fost creat!");
-                fileWriter.println(linie);
+                fileWriter.println(linie); // scriem in fisier rezultatele
             }
         }
         catch (IOException e){

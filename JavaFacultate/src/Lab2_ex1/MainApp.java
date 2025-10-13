@@ -7,6 +7,10 @@ import java.util.Scanner;
 import java.io.*;
 
 public class MainApp {
+    /*Fișierul judete_in.txt, conține lista neordonată a județelor din țară. Să se încarce
+datele din fișier într-un tablou de String-uri și să se ordoneze acest tablou cu ajutorul metodei
+sort() din clasa Arrays. Să se returneze pe ce poziție se află în vectorul ordonat un județ
+introdus de la tastatură. Se va utiliza metoda de căutare binară din clasa Arrays. */
     public static void main(String[] args) {
         try {
             File file = new File("/Users/arisradoi/Desktop/java projects/JavaPrograme/JavaFacultate/src/Lab2_ex1/judete_in.txt");
