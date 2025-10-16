@@ -1,5 +1,4 @@
 package Lab3_ex1;
-import java.sql.SQLOutput;
 import java.util.*;
 import java.io.*;
 public class MainApp {
