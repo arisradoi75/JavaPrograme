@@ -1,0 +1,9 @@
+imprimanta;HP LaserJet Pro M404dn;1001;1200.50;Z1;achizitionat;38;1200;3000;alb_negru
+imprimanta;Canon PIXMA G640;1002;1450.00;Z2;expus;25;4800;6000;color
+imprimanta;Epson EcoTank L3250;1003;1100.75;Z3;vandut;33;5760;6500;color
+copiator;Xerox WorkCentre 3025;2001;1800.00;Z2;expus;12000;A4
+copiator;Canon imageRUNNER 2425;2002;3500.00;Z1;achizitionat;25000;A3
+copiator;Ricoh IM 2702;2003;4100.00;Z4;vandut;22000;A3
+sistem_calcul;Dell OptiPlex 7090;3001;4200.00;Z5;achizitionat;LED;3.6GHz;512GB;Windows
+sistem_calcul;HP ProDesk 400 G7;3002;3800.50;Z5;expus;LCD;3.4GHz;1TB;Linux
+sistem_calcul;Lenovo ThinkCentre M80q;3003;4500.00;Z6;vandut;LED;4.0GHz;512GB;Windows

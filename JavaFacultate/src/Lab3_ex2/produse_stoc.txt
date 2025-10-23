@@ -1,3 +1,5 @@
-Produs{denumire= paine, pret= 3.0 ron, cantitate= -5 grame, data expirare= 2025-10-13}
+Produs{denumire= lapte, pret= 6.2 ron, cantitate= -10 grame, data expirare= 2025-10-15}
+Produs{denumire= paine, pret= 3.0 ron, cantitate= 5 grame, data expirare= 2025-10-13}
+Produs{denumire= ulei, pret= 8.5 ron, cantitate= -5 grame, data expirare= 2026-01-20}
 Produs{denumire= ciocolata, pret= 7.8 ron, cantitate= 8 grame, data expirare= 2024-12-01}
 Produs{denumire= suc_portocale, pret= 5.0 ron, cantitate= 0 grame, data expirare= 2025-09-10}
