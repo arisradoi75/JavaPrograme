@@ -1,0 +1,92 @@
+[
+  {
+    "nume": "Popescu Ion",
+    "post": "Director General",
+    "data_angajarii": "2022-01-15",
+    "salariu": 9500.0
+  },
+  {
+    "nume": "Ionescu Maria",
+    "post": "Sef Departament IT",
+    "data_angajarii": "2024-04-20",
+    "salariu": 6500.0
+  },
+  {
+    "nume": "Georgescu Andrei",
+    "post": "Director Financiar",
+    "data_angajarii": "2024-04-12",
+    "salariu": 8000.0
+  },
+  {
+    "nume": "Dumitru Elena",
+    "post": "Programator Junior",
+    "data_angajarii": "2024-07-01",
+    "salariu": 2800.0
+  },
+  {
+    "nume": "Radu Alexandru",
+    "post": "Analist",
+    "data_angajarii": "2024-08-15",
+    "salariu": 3200.0
+  },
+  {
+    "nume": "Stan Mihai",
+    "post": "Sef Departament Resurse Umane",
+    "data_angajarii": "2024-04-05",
+    "salariu": 5800.0
+  },
+  {
+    "nume": "Popa Ana",
+    "post": "Contabil",
+    "data_angajarii": "2024-03-10",
+    "salariu": 2300.0
+  },
+  {
+    "nume": "Ion Cristina",
+    "post": "Secretar",
+    "data_angajarii": "2023-09-12",
+    "salariu": 2100.0
+  },
+  {
+    "nume": "Marinescu Ion",
+    "post": "Director Tehnic",
+    "data_angajarii": "2024-04-25",
+    "salariu": 7200.0
+  },
+  {
+    "nume": "Vasilescu Dan",
+    "post": "Programator Senior",
+    "data_angajarii": "2024-06-18",
+    "salariu": 4800.0
+  },
+  {
+    "nume": "Munteanu Sofia",
+    "post": "Designer",
+    "data_angajarii": "2024-07-22",
+    "salariu": 3500.0
+  },
+  {
+    "nume": "Constantinescu Radu",
+    "post": "Sef Proiect",
+    "data_angajarii": "2023-11-08",
+    "salariu": 5500.0
+  },
+  {
+    "nume": "Diaconu Ioana",
+    "post": "Marketing Manager",
+    "data_angajarii": "2024-05-14",
+    "salariu": 4200.0
+  },
+  {
+    "nume": "Tudor Ion",
+    "post": "Tehnician",
+    "data_angajarii": "2024-08-03",
+    "salariu": 2600.0
+  },
+  {
+    "nume": "Barbu Gabriela",
+    "post": "Asistent Manager",
+    "data_angajarii": "2024-02-20",
+    "salariu": 2900.0
+  }
+]

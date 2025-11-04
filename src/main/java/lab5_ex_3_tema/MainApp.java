@@ -9,7 +9,7 @@ import java.util.*;
 public class MainApp {
     public static List<Mobilier> citire() {
         try{
-            File file = new File("/Users/arisradoi/Desktop/java projects/JavaFacultate/Maven_lab5/src/main/java/lab5_ex_3_tema/mobilier.json");
+            File file = new File("/Users/arisradoi/Desktop/java projects/JavaFacultate/Maven_lab5/src/main/resources/mobilier.json");
             ObjectMapper objectMapper = new ObjectMapper();
             List<Mobilier> mobiliere = objectMapper.readValue(file , new TypeReference<List<Mobilier>>(){});
             return mobiliere;
@@ -100,9 +100,6 @@ public class MainApp {
                     break;
             }
         }
-
-
-
 
     }
 }
