@@ -1,0 +1,39 @@
+[ [ "lab7_ex2.Chitara", {
+  "producator" : "AsoltaneiMusic",
+  "pret" : 150.0,
+  "tipChitara" : "ACUSTICA",
+  "nrCorzi" : 6
+} ], [ "lab7_ex2.Chitara", {
+  "producator" : "SRLMusic",
+  "pret" : 950.0,
+  "tipChitara" : "ELECTRICA",
+  "nrCorzi" : 12
+} ], [ "lab7_ex2.Chitara", {
+  "producator" : "JhonnyDeep",
+  "pret" : 4500.0,
+  "tipChitara" : "ELECTRICA",
+  "nrCorzi" : 6
+} ], [ "lab7_ex2.SetTobe", {
+  "producator" : "MariusSRL",
+  "pret" : 450.0,
+  "tipTobe" : "ACUSTICE",
+  "nrTobe" : 6,
+  "nrCinele" : 4
+} ], [ "lab7_ex2.SetTobe", {
+  "producator" : "ATENASRL",
+  "pret" : 850.0,
+  "tipTobe" : "ELECTRICE",
+  "nrTobe" : 8,
+  "nrCinele" : 6
+} ], [ "lab7_ex2.Chitara", {
+  "producator" : "LazarMusic",
+  "pret" : 350.0,
+  "tipChitara" : "ELECTRICA",
+  "nrCorzi" : 8
+} ], [ "lab7_ex2.SetTobe", {
+  "producator" : "CRASPUNDSRL",
+  "pret" : 1050.0,
+  "tipTobe" : "ELECTRICE",
+  "nrTobe" : 10,
+  "nrCinele" : 8
+} ] ]

@@ -70,7 +70,7 @@ public class MainApp {
 
         System.out.println("============Subpunctul 6==============");
         angajati.stream()
-                .filter(angajat -> angajat.getSalariu() < 3000).forEach(angajat -> System.out.println(angajat.getNume().toUpperCase()));
+                .filter(angajat -> angajat.getSalariu() < 3000).forEach(angajat -> System.out.println(angajat.getSalariu()));
 
         System.out.println("============Subpunctul 7============");
 
