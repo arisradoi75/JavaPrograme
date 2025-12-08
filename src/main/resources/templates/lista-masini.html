@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista Masini</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 th:text="${str}">Lista masinilor</h1>
+
+<!-- Mesaj general (succes / eroare) -->
+<div th:if="${mesaj != null}">
+    <p style="color: green; font-weight: bold;" th:text="${mesaj}"></p>
+</div>
+
+<!-- Mesaj eroare pentru căutare după număr -->
+<div th:if="${eroareCautare != null}">
+    <p style="color: red; font-weight: bold;" th:text="${eroareCautare}"></p>
+</div>
+
+<!-- Afișare rezultat căutare după număr -->
+<div th:if="${masinaCautata != null}">
+    <h2>Rezultat căutare după număr</h2>
+    <p><b>Număr:</b> <span th:text="${masinaCautata.nrInmatriculare}"></span></p>
+    <p><b>Marca:</b> <span th:text="${masinaCautata.marca}"></span></p>
+    <p><b>An:</b> <span th:text="${masinaCautata.anFabricatie}"></span></p>
+    <p><b>Culoare:</b> <span th:text="${masinaCautata.culoare}"></span></p>
+    <p><b>KM:</b> <span th:text="${masinaCautata.km}"></span></p>
+</div>
+
+<hr/>
+
+<!-- FORMULAR CAUTARE DUPĂ NUMĂR -->
+<h2>Caută mașină după număr</h2>
+
+<form th:action="@{/cauta-masina}" method="post">
+    <label>Număr înmatriculare:</label>
+    <input type="text" name="nrInmatriculare" required>
+    <button type="submit">Caută</button>
+</form>
+
+<hr/>
+
+<!-- FORMULAR CAUTARE DUPĂ MARCĂ -->
+<h2>Caută câte mașini există pentru o marcă</h2>
+
+<form th:action="@{/cauta-dupa-marca}" method="post">
+    <label>Marca:</label>
+    <input type="text" name="marca" required>
+    <button type="submit">Caută</button>
+</form>
+
+<!-- Afișare rezultat căutare după marcă -->
+<div th:if="${numarMasini != null}">
+    <h3>Rezultatul căutării:</h3>
+    <p>
+        Există <b th:text="${numarMasini}"></b> mașini cu marca
+        <b th:text="${marcaCautata}"></b>.
+    </p>
+</div>
+
+<hr/>
+
+<!-- TABEL MASINI -->
+<h2>Toate mașinile</h2>
+<table>
+    <tr>
+        <th>Număr Înmatriculare</th>
+        <th>Marca</th>
+        <th>An fabricație</th>
+        <th>Culoare</th>
+        <th>KM</th>
+        <th>Acțiuni</th>
+    </tr>
+
+    <tr th:each="m : ${masini}">
+        <td th:text="${m.nrInmatriculare}"></td>
+        <td th:text="${m.marca}"></td>
+        <td th:text="${m.anFabricatie}"></td>
+        <td th:text="${m.culoare}"></td>
+        <td th:text="${m.km}"></td>
+
+        <!-- Buton ștergere -->
+        <td>
+            <form th:action="@{/sterge-masina}" method="post" style="display:inline;">
+                <input type="hidden" name="nrInmatriculare" th:value="${m.nrInmatriculare}">
+                <button type="submit" style="color:red;">Șterge</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<hr/>
+
+<!-- FORMULAR ADAUGARE MASINA -->
+<h2>Adaugă mașină</h2>
+
+<form th:action="@{/adauga-masina}" method="post">
+
+    <label>Număr înmatriculare:</label>
+    <input type="text" name="nrInmatriculare" required><br/><br/>
+
+    <label>Marca:</label>
+    <input type="text" name="marca" required><br/><br/>
+
+    <label>An fabricație:</label>
+    <input type="number" name="anFabricatie" required><br/><br/>
+
+    <label>Culoare:</label>
+    <input type="text" name="culoare" required><br/><br/>
+
+    <label>Kilometri:</label>
+    <input type="number" name="km" required><br/><br/>
+
+    <button type="submit">Adaugă</button>
+</form>
+
+</body>
+</html>
