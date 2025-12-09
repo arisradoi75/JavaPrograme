@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<p th:text="${eroare}" style="color:red"></p>
+
+<form action="/register" method="post">
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Parola:</label>
+    <input type="password" name="parola" required><br><br>
+
+    <button type="submit">Creaza cont</button>
+</form>
+
+<p>Ai deja cont? <a href="/login">Loghează-te aici</a></p>
+
+</body>
+</html>
