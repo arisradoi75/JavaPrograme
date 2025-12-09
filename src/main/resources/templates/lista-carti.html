@@ -8,6 +8,31 @@
 
 <h1 th:text="${str}"></h1>
 
+<!-- Formular pentru adăugare carte -->
+<h2>Adauga o carte noua</h2>
+
+<form action="/adauga-carte" method="get">
+    <label>ISBN:</label>
+    <input type="text" name="isbn" required>
+    <br><br>
+
+    <label>Titlu:</label>
+    <input type="text" name="titlu" required>
+    <br><br>
+
+    <label>Autor:</label>
+    <input type="text" name="autor" required>
+    <br><br>
+
+    <button type="submit">Adauga carte</button>
+</form>
+
+<!-- Afișare mesaj succes -->
+<p th:text="${mesaj}" style="color: green;"></p>
+
+<hr>
+
+<!-- Tabelul cu carti -->
 <table border="1">
     <tr>
         <th>ISBN</th>
