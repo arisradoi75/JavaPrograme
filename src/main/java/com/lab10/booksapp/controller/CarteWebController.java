@@ -41,4 +41,18 @@ public class CarteWebController {
 
         return "lista-carti";
     }
+
+    @GetMapping("/sterge-carte")
+    public String stergeCarte(@RequestParam String isbn , Model model){
+        boolean rezultat = carteService.stergeCarte(isbn);
+
+        if(rezultat)
+            model.addAttribute("mesaj", "Carte stearsa cu succes!");
+        else
+            model.addAttribute("mesaj", "Eroare la stergere!");
+
+        model.addAttribute("carti", carteRepository.findAll());
+
+        return "lista-carti";
+    }
 }

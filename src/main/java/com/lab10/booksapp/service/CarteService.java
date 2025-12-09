@@ -18,5 +18,13 @@ public class CarteService {
         carteRepository.save(carte);
     }
 
+    public boolean stergeCarte(String isbn){
+        if(carteRepository.existsById(isbn)){
+            carteRepository.deleteById(isbn);
+            return true;
+        }
+        return false;
+    }
+
 
 }
